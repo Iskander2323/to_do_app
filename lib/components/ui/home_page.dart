@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:to_do_app/components/ui/widgets/custom_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,6 +31,7 @@ class _HomePageState extends State<HomePage> {
                   context.goNamed('to_do_form_page');
                 },
                 icon: Icon(Icons.add)),
+            CustomButton(title: 'GET TO DO', onTap: () {})
           ],
         ),
       ),
