@@ -1,10 +1,8 @@
 part of 'to_do_bloc.dart';
 
-sealed class ToDoState extends Equatable {
-  const ToDoState();
-  
+enum ToDoStateStatus { loading, success, failure }
+
+final class ToDoState extends Equatable {
   @override
   List<Object> get props => [];
 }
-
-final class ToDoInitial extends ToDoState {}
